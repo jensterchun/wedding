@@ -1,0 +1,11 @@
+.upperContainerStory {
+    display: grid;
+    grid-template-rows: repeat(6, 10em);
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../img/bekir-donmez-414245-unsplash.jpg);
+    
+    /* background image magical formula */
+    background-position: 50% 49%;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,149 @@
+/*Navigation*/
+.fixedNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    opacity: .9;
+    box-shadow: 0px 1px #a9c8b6;
+}
+
+.navPrimary {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    color: black;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+}
+
+.nav1 {
+    font-size: .8em;
+    padding: 0.2em 4em 0.2em 1.5em;
+}
+
+.navPrimary a:link    {
+    /* Applies to unvisited links in class mainNav */
+    text-decoration:  none;
+    font-weight:      bold;
+    color:            black;
+} 
+.navPrimary a:visited {
+    /* Applies to visited links in class mainNav */
+    text-decoration:  none;
+    font-weight:      bold;
+    color:            black;
+} 
+.navPrimary a:hover   {
+    /* Applies to links under the pointer in class mainNav */
+    text-decoration:  none;
+    font-weight:      bold;
+    color:            grey;
+} 
+.navPrimary a:active  {
+    /* Applies to activated links in class mainNav */
+    text-decoration:  none;
+    font-weight:      bold;
+    color:          black;
+}
+
+#selected {
+    text-decoration: underline;
+}
+
+.upperContainer {
+    display: grid;
+    grid-template-rows: repeat(6, 10em);
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../img/sarah-cervantes-432778-unsplash.jpg);
+    
+    /* background image magical formula */
+    background-position: 20% 26%;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+}
+
+.pageTitle {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 8em;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1/4;
+    opacity: .7;
+}
+
+.middleContainer {
+    display:grid;
+    grid-template-rows: repeat(6, 10em);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+}
+
+.midInfo {
+    font-family: 'Poiret One', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.midInfo1 {
+    font-size: 5em;
+    grid-row: 2;
+}
+
+.midInfo2 {
+    font-size: 3em;
+    grid-row: 4;
+}
+
+.lowerContainer {
+    display: grid;
+    grid-template-rows: repeat(6, 10em);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #a9c8b6;
+}
+
+.lowerContainerPic {
+    background-image: url(../img/jared-sluyter-302617-unsplash.jpg);
+    background-position: 20% 60%;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    grid-row: 1/5;
+}
+
+.lowerInfo {
+    font-family: 'Poiret One', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 5/7;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.navLower {
+    font-family: 'Poiret One', cursive;
+    font-size: 1em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/*gets rid of the bullet*/
+ul {
+    list-style-type: none;
+}
